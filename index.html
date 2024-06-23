@@ -4,9 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
+    <div class="notification">
+      <p>
+        При вводе номера кабинета перед ним должна быть английская буква "a"
+      </p>
+      <p>Например "a102"</p>
+    </div>
+    <form>
+      <div class="inputFrom__wrapper">
+        <input value="a" name="" id="from" type="text" class="inputFrom" />
+        <input value="a" name="" id="to" type="text" class="inputFrom" />
+        <button type="button" onclick="routePlan()">В путь</button>
+      </div>
+    </form>
     <div class="wrapper">
       <div class="map-container-1">
         <canvas id="map1" width="904px" height="830px"></canvas>
@@ -39,12 +53,6 @@
     <button id="floor2" onclick="floorChange(2)"></button>
     <button id="floor3" onclick="floorChange(3)"></button>
     <button id="floor4" onclick="floorChange(4)"></button> -->
-
-    <form>
-      <input value="a" name="" id="from" type="text" />
-      <input value="a" name="" id="to" type="text" />
-      <button type="button" onclick="routePlan()">В путь</button>
-    </form>
     <script src="./main.js"></script>
   </body>
 </html>
