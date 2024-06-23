@@ -55,3 +55,20 @@
   display: none;
   background-color: red;
 }
+
+.notification {
+  display: flex;
+  width: 300px;
+  background-color: aqua;
+}
+
+.inputFrom__wrapper {
+  width: 100px;
+  margin: 0 auto;
+  display: grid;
+}
+
+.inputFrom {
+  width: 100px;
+  height: 20px;
+}
